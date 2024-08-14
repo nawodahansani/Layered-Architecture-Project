@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fishmarketing.controller.RegisterFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="760.0">
+         <image>
+            <Image url="@../icon/flowers-and-fish-11494-2560x1600.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="233.0" layoutY="110.0" prefHeight="413.0" prefWidth="294.0">
+         <children>
+            <Label layoutX="114.0" layoutY="37.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="86.0" text="User Id" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="27.0" layoutY="157.0" text="User Name" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="27.0" layoutY="225.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtUserId" layoutX="24.0" layoutY="110.0" prefHeight="30.0" prefWidth="247.0" promptText="Userid" style="-fx-background-color: #f1f2f6; -fx-background-radius: 8;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="txtName" layoutX="24.0" layoutY="180.0" prefHeight="30.0" prefWidth="247.0" promptText="Username" style="-fx-background-color: #f1f2f6; -fx-background-radius: 8;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="txtPw" layoutX="24.0" layoutY="249.0" prefHeight="30.0" prefWidth="247.0" promptText="Password" style="-fx-background-color: #f1f2f6; -fx-background-radius: 8;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Button alignment="CENTER" layoutX="23.0" layoutY="310.0" mnemonicParsing="false" onAction="#registerOnAction" prefHeight="30.0" prefWidth="247.0" style="-fx-background-radius: 8; -fx-background-color: #60a3bc;" text="REGISTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="182.0" layoutY="310.0">
+               <image>
+                  <Image url="@../icon/register.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="906.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fishmarketing.controller.PaymentFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="375.0" layoutY="50.0" prefHeight="30.0" prefWidth="196.0" text="Payment Manage">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="293.0" layoutY="123.0" prefHeight="375.0" prefWidth="321.0" style="-fx-background-color: C7ECEEFF; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="37.0" layoutY="97.0" prefHeight="30.0" prefWidth="89.0" text="Payment Id :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="53.0" prefHeight="30.0" prefWidth="57.0" text="Date :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPaymentId" layoutX="128.0" layoutY="97.0" prefHeight="30.0" prefWidth="68.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="94.0" layoutY="53.0" prefHeight="30.0" prefWidth="127.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="139.0" prefHeight="30.0" prefWidth="76.0" text="Order Id :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="182.0" prefHeight="30.0" prefWidth="68.0" text="Amount :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtOId" layoutX="113.0" layoutY="142.0" prefHeight="25.0" prefWidth="155.0" />
+            <TextField fx:id="txtAmount" layoutX="113.0" layoutY="185.0" prefHeight="25.0" prefWidth="155.0" />
+            <Label layoutX="36.0" layoutY="230.0" prefHeight="30.0" prefWidth="68.0" text="Cash :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCash" layoutX="113.0" layoutY="233.0" prefHeight="25.0" prefWidth="155.0" />
+            <Label layoutX="36.0" layoutY="278.0" prefHeight="30.0" prefWidth="68.0" text="Balance :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBalance" layoutX="113.0" layoutY="282.0" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #ffffff; -fx-border-color: #b2bec3;" />
+            <Button alignment="BASELINE_LEFT" layoutX="164.0" layoutY="322.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #3867d6;" text="   Pay" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="214.0" layoutY="322.0">
+               <image>
+                  <Image url="@../icon/payment.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

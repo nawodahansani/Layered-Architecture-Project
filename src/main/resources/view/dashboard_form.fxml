@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="node" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1365.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fishmarketing.controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="695.0" fitWidth="1365.0">
+         <image>
+            <Image url="@../icon/flowers-and-fish-11494-2560x1600.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="58.0" layoutY="58.0" prefHeight="580.0" prefWidth="270.0" style="-fx-background-radius: 10; -fx-background-color: #60a3bc;">
+         <children>
+            <Button alignment="BASELINE_CENTER" layoutY="156.0" mnemonicParsing="false" onAction="#homeOnAction" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #60a3bc; -fx-border-color: #82ccdd;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="CENTER" layoutY="197.0" mnemonicParsing="false" onAction="#employeeOnAction" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #60a3bc; -fx-border-color: #82ccdd;" text="Mange Employee" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="238.0" mnemonicParsing="false" onAction="#customerOnAction" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #60a3bc; -fx-border-color: #82ccdd;" text="Manage Customer" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="31.0" layoutY="201.0">
+               <image>
+                  <Image url="@../icon/employee.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="240.0">
+               <image>
+                  <Image url="@../icon/customer.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="32.0" layoutY="160.0">
+               <image>
+                  <Image url="@../icon/home.png" />
+               </image>
+            </ImageView>
+            <Button layoutY="279.0" mnemonicParsing="false" onAction="#fishSpeciesOnAction" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #60a3bc; -fx-border-color: #82ccdd;" text="Manage FishSpecies" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="281.0">
+               <image>
+                  <Image url="@../icon/fish.png" />
+               </image>
+            </ImageView>
+            <Button layoutY="321.0" mnemonicParsing="false" onAction="#placeOrderOnAction" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #60a3bc; -fx-border-color: #82ccdd;" text="Place Order" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="324.0">
+               <image>
+                  <Image url="@../icon/cart.png" />
+               </image>
+            </ImageView>
+            <Button layoutY="405.0" mnemonicParsing="false" onAction="#BackOnAction" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #60a3bc; -fx-border-color: #82ccdd;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="32.0" layoutY="406.0">
+               <image>
+                  <Image url="@../icon/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="105.0" layoutY="14.0">
+               <image>
+                  <Image url="@../icon/User.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUser" layoutX="67.0" layoutY="89.0" text="Malaka FishMarketing" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" alignment="CENTER" layoutX="19.0" layoutY="109.0" prefHeight="20.0" prefWidth="233.0" text="Date" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutY="363.0" mnemonicParsing="false" onAction="#settingOnAction" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #60a3bc; -fx-border-color: #82ccdd;" text="User Setting" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="32.0" layoutY="364.0">
+               <image>
+                  <Image url="@../icon/setting.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootNode" layoutX="402.0" layoutY="58.0" prefHeight="580.0" prefWidth="906.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" layoutX="582.0" layoutY="373.0" prefHeight="119.0" prefWidth="256.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 10;" text="FishSpecies Count" textFill="#0a7183">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="582.0" layoutY="72.0" prefHeight="119.0" prefWidth="256.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 10;" text="Customer Count" textFill="#0a7183">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="582.0" layoutY="229.0" prefHeight="119.0" prefWidth="256.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 10;" text="Employee Count" textFill="#0a7183">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="70.0" layoutY="284.0" prefHeight="241.0" prefWidth="432.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 10;">
+               <children>
+                  <TableView fx:id="tblCustomer" layoutX="9.0" layoutY="31.0" prefHeight="205.0" prefWidth="413.0" style="-fx-background-radius: 10;">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="67.0" text="id" />
+                      <TableColumn fx:id="colCname" prefWidth="114.0" text="customer name" />
+                        <TableColumn fx:id="colAddress" prefWidth="116.0" text="address" />
+                        <TableColumn fx:id="colTel" prefWidth="115.0" text="tel" />
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="135.0" layoutY="6.0" prefHeight="20.0" prefWidth="163.0" style="-fx-background-color: #ced6e0; -fx-background-radius: 15;" text="Customers">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="employeeCount" alignment="CENTER" layoutX="710.0" layoutY="300.0" text="0" textFill="#0a7183">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="customerCount" layoutX="710.0" layoutY="146.0" text="0" textFill="#0a7183">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="fishSpeciesCount" layoutX="710.0" layoutY="447.0" text="0" textFill="#0a7183">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="70.0" layoutY="25.0" prefHeight="241.0" prefWidth="432.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 10;">
+               <children>
+                  <TableView fx:id="tblFish" layoutX="10.0" layoutY="32.0" prefHeight="205.0" prefWidth="413.0" style="-fx-background-radius: 10;">
+                     <columns>
+                        <TableColumn fx:id="colName" prefWidth="145.0" text="Fish Name" />
+                        <TableColumn fx:id="colPrice" prefWidth="180.0" text="MarketPrice" />
+                        <TableColumn fx:id="colQty" prefWidth="87.0" text="Qty" />
+                     </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="135.0" layoutY="7.0" prefHeight="20.0" prefWidth="163.0" style="-fx-background-color: #ced6e0; -fx-background-radius: 15;" text="Fish Species">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="685.0" layoutY="231.0">
+               <image>
+                  <Image url="@../icon/employee%20count.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="691.0" layoutY="77.0">
+               <image>
+                  <Image url="@../icon/customer%20count.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="685.0" layoutY="375.0">
+               <image>
+                  <Image url="@../icon/fish%20count.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

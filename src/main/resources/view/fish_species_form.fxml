@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="580.0" prefWidth="906.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fishmarketing.controller.FishSpeciesFormController">
+   <children>
+      <Button alignment="BASELINE_LEFT" layoutX="457.0" layoutY="283.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #eb3b5a;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="BASELINE_LEFT" layoutX="315.0" layoutY="283.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #3867d6;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView layoutX="524.0" layoutY="289.0">
+         <image>
+            <Image url="@../icon/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="371.0" layoutY="287.0">
+         <image>
+            <Image url="@../icon/save.png" />
+         </image>
+      </ImageView>
+      <Button alignment="BASELINE_LEFT" layoutX="595.0" layoutY="283.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #26de81;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="662.0" layoutY="288.0">
+         <image>
+            <Image url="@../icon/update.png" />
+         </image>
+      </ImageView>
+      <Button alignment="BASELINE_LEFT" layoutX="175.0" layoutY="283.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #ffc048;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="233.0" layoutY="289.0">
+         <image>
+            <Image url="@../icon/clear.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="486.0" layoutY="94.0" text="FishSpecies Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="355.0" layoutY="217.0" onKeyReleased="#txtFishQtyOnKeyReleased" prefHeight="35.0" prefWidth="210.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="356.0" layoutY="189.0" text="Quantity">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="486.0" layoutY="120.0" onKeyReleased="#txtFishNameOnKeyReleased" prefHeight="35.0" prefWidth="320.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="122.0" layoutY="94.0" text="FishSpecies Id">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="189.0" text="MarketPrice">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="120.0" layoutY="120.0" onAction="#searchOnAction" onKeyReleased="#txtFishIDKeyReleased" prefHeight="35.0" prefWidth="320.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="txtPrice" layoutX="120.0" layoutY="217.0" onKeyReleased="#txtFishPriceOnKeyReleased" prefHeight="35.0" prefWidth="210.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label alignment="CENTER" layoutX="365.0" layoutY="40.0" prefHeight="30.0" prefWidth="196.0" text="FishSpecies Manage">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblFishSpecies" layoutX="121.0" layoutY="351.0" prefHeight="201.0" prefWidth="699.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="108.0" text="Id" />
+            <TableColumn fx:id="colName" prefWidth="150.0" resizable="false" text="Name" />
+            <TableColumn fx:id="colPrice" prefWidth="178.0" text="MarketPrice" />
+            <TableColumn fx:id="colQty" prefWidth="121.0" text="Qty" />
+            <TableColumn fx:id="coleId" prefWidth="127.0" text="Person In Charge" />
+         </columns>
+      </TableView>
+      <Label layoutX="597.0" layoutY="189.0" text="Person In Charge">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbEId" layoutX="596.0" layoutY="217.0" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #f5f5f5;" />
+   </children>
+</AnchorPane>
